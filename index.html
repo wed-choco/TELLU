@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="description" content="tellu. — 気持ちを記録し、言葉を見つけ、自分の言葉で表現する。あなたの言葉が小さな世界になる、登録不要の練習帳。">
+  <title>tellu. — 「思っている」を、「言える」に。</title>
+  <link rel="stylesheet" href="tellu.css">
+  <script src="tellu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <aside class="sidebar">
+    <a href="#home" class="brand" aria-label="tellu. ホーム">tellu<span>.</span><i aria-hidden="true">✳</i></a>
+    <p class="brand-caption">ことばが育つ、わたしの世界。</p>
+    <nav class="navigation" aria-label="メインナビゲーション">
+      <button type="button" data-nav="home"><span data-icon="home"></span><span>ホーム<small>Home</small></span></button>
+      <button type="button" data-nav="discover"><span data-icon="spark"></span><span>言葉を見つける<small>Discover</small></span></button>
+      <button type="button" data-nav="journal"><span data-icon="book"></span><span>気持ちをつづる<small>Journal</small></span></button>
+      <button type="button" data-nav="atlas"><span data-icon="map"></span><span>言葉の地図<small>Atlas</small></span></button>
+    </nav>
+    <div class="sidebar-poem"><span aria-hidden="true">✳</span><p>ひとつ言葉が見つかると、<br>世界は、少し広くなる。</p><small>FIND YOUR WORDS.<br>EXPAND YOUR WORLD.</small></div>
+    <div class="sidebar-foot"><span data-icon="lock"></span><p>あなたの言葉は、ここに。<small>登録不要・ブラウザ内に保存</small></p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span><i class="status-dot"></i> 自分のペースで、ひとことずつ。</span><div><span class="demo-badge">LOCAL PROTOTYPE</span><button type="button" class="icon-button" data-nav="privacy" aria-label="プライバシーとデータ"><span data-icon="lock"></span></button></div></header>
+    <div id="storage-warning" class="notice warning" role="alert" hidden></div>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>tellu. <i>/</i> 「思っている」を、「言える」に。</span><div><button type="button" data-nav="about">tellu.について</button><button type="button" data-nav="privacy">プライバシーとデータ</button></div></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirmation" aria-labelledby="confirm-title" aria-describedby="confirm-description"><form method="dialog"><span class="eyebrow">YOUR WORDS, YOUR CHOICE</span><h2 id="confirm-title"></h2><p id="confirm-description"></p><div class="actions"><button class="button secondary" value="cancel">やめる</button><button class="button" id="confirm-button" value="confirm">続ける</button></div></form></dialog>
+  <noscript>tellu.を使うにはJavaScriptを有効にしてください。</noscript>
+</body>
+</html>
